@@ -1,14 +1,12 @@
 {
-  "admin":[],
-  
   "users": [
     {
-      "id": "b9e1",
+      "id": "5b03",
       "firstName": "Muhammed",
       "lastName": "Jumail",
       "email": "jumailjumi2003@gmail.com",
       "mob": "9847193231",
-      "password": "abcdefg",
+      "password": "111111",
       "cart": [],
       "order": {
         "ShippingAddress": [
@@ -17,60 +15,46 @@
             "city": "cherpulassery",
             "state": "kerala",
             "zip": "679503",
-            "paymentMethod": "UPI"
+            "paymentMethod": "CASH"
           }
         ],
         "OrderItems": [
           {
-            "id": "10",
-            "heading": "Butcher's Joints & Coat Wet Adult Dog Food 18x390g",
-            "discription": "Promotes healthy joints, skin, and coat with a balanced, grain-free recipe. Vet endorsed for adult dogs",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7135238.jpg",
+            "id": "1",
+            "heading": "Pets at Home Degradable Dog Poop Bags 200 Pack+20 Extra Free",
+            "discription": "Easily carry and hygienically dispose of dog waste with tie-handle bags. Portable, quick-dispensing pack offers great value with 20 extra bags.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7137876.jpg",
             "catogory": "dog-food",
-            "price": 15,
-            "rating": 4.5,
-            "qty": 5
+            "price": 2,
+            "rating": 3.5,
+            "qty": 6
           }
         ],
-        "Amount": 75,
-        "date": "2024-09-17T06:33:57.329Z",
-        "orderId": 536
-      }
+        "Amount": 12,
+        "date": "2024-09-17T15:52:00.800Z",
+        "orderId": 402728
+      },
+      "admin": true
     },
     {
-      "id": "09e5",
+      "id": "63c9",
       "firstName": "Muhammed",
-      "lastName": "faris",
-      "email": "lll@gmail.com",
-      "mob": "9847193231",
-      "password": "zzzzzz",
+      "lastName": "xyz",
+      "email": "munavvirmuhammed296@gmail.com",
+      "mob": "1111111111",
+      "password": "111111",
       "cart": [],
-      "order": {
-        "ShippingAddress": [
-          {
-            "address": "korrikaatil , poothakkad , veramangalm,",
-            "city": "cherpulassery",
-            "state": "kerala",
-            "zip": "679503",
-            "paymentMethod": "UPI"
-          }
-        ],
-        "OrderItems": [
-          {
-            "id": "9",
-            "heading": "Arden Grange Adult Dry Dog Food with Chicken & Rice",
-            "discription": "Hypoallergenic, free from artificial additives, and packed with delicious, digestible chicken protein",
-            "url": "https://cdn.petsathome.com/public/images/products/900_35010.jpg",
-            "catogory": "dog-food",
-            "price": 10,
-            "rating": 3.5,
-            "qty": 1
-          }
-        ],
-        "Amount": 10,
-        "date": "2024-09-17T08:28:10.575Z",
-        "orderId": 337456
-      }
+      "order": {}
+    },
+    {
+      "id": "42c3",
+      "firstName": "João",
+      "lastName": "faris",
+      "email": "teste@exemplo.us",
+      "mob": "2222222222",
+      "password": "222222",
+      "cart": [],
+      "order": {}
     }
   ],
   "products": [

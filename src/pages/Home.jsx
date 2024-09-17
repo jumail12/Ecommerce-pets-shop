@@ -14,13 +14,13 @@ const Home = () => {
   return (
     <div>
   
-        <Offer/>
+     <Offer/>
     <Category/>
     <TopProducts/>
     <Offer2/>
     <Dogfood/>
     <PetShopOffers/>
-    <Footer/>
+   
     
     
     </div>

@@ -2,7 +2,7 @@ import "./index.css";
 import Home from "./pages/Home";
 import Navbar from "./comp/Navbar";
 import Footer from "./comp/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import SignUp from "./Login/SignUp";
 import Register from "./Login/Register";
@@ -27,11 +27,14 @@ import Error404 from "./comp/Error404";
 
 import Payment from "./pages/Payment";
 import OrderSummary from "./pages/OrderSummary";
+import { AdminHome } from "./admin/adminPages/AdminHome";
 
 function App() {
+  const location=useLocation();
+  const sholudHidden=location.pathname==="/login"||location.pathname==="/register" || location.pathname.startsWith("/admin")
   return (
     <div>
-      <Navbar/>
+      {!sholudHidden&&<Navbar/>}
       <Routes>
         {/* Home */}
         <Route path="/" element={<Home />} />
@@ -73,7 +76,21 @@ function App() {
 
         {/* summary */}
         <Route path="/summary" element={<OrderSummary />} />
+
+        {/* admin */}
+        <Route path="/admin" element={<AdminHome></AdminHome>}>
+        
+        </Route>
+
+  
       </Routes>
+      {!sholudHidden&&<Footer/>}
+
+      
+              
+      
+
+      
     </div>
   );
 }

@@ -40,12 +40,23 @@ const SignUp = () => {
 
     if (Validate(Fvalues)) {
       const user = userData.find((user) => user.email === Fvalues.email);
-      if (user) {
+      const admin=user.admin;
+
+      if(admin){
+        localStorage.setItem("admin", user.admin);
         localStorage.setItem("id", user.id);
         localStorage.setItem("user", user.lastName);
+        navigate("/admin",{ replace: true });
+      }else if(user ){
+        localStorage.setItem("id", user.id);
+        localStorage.setItem("user", user.lastName);
+        navigate("/", { replace: true });
+        window.location.reload();
       }
-      navigate("/", { replace: true });
-      window.location.reload();
+      
+      
+     
+      
     }
   };
 
