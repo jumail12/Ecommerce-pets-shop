@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import {useNavigate} from "react-router-dom"
 
 const UserList = () => {
 
@@ -15,13 +16,13 @@ const UserList = () => {
     },[])
 
    const filterU=user.filter((item)=>!(item.admin));
+
+//    onclick
+const nav=useNavigate()
+const userD=(userId)=>{
+    nav(`/admin/userd/${userId}`)
+}
  
-   
-    
-    
-
-    
-
   return (
     <div className="p-8">
     <div>
@@ -29,7 +30,7 @@ const UserList = () => {
     </div>
     <div className="space-y-4">
         {filterU.map((user) => (
-            <div key={user.id} className="p-4 border border-gray-300 rounded-lg shadow-lg">
+            <div key={user.id} className="p-4 border border-gray-300 rounded-lg shadow-lg cursor-pointer" onClick={()=>userD(user.id)}>
                 <h3 className="text-xl font-semibold">{user.lastName}</h3>
                 <h4 className="text-gray-600">{user.email}</h4>
             </div>

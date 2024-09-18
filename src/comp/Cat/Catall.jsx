@@ -21,7 +21,7 @@ const Catall = () => {
       const nav=useNavigate();
 
       const Filter=(id)=>{
-        nav(`/${id}`)
+        nav(`/item/${id}`)
       }
 
   return (

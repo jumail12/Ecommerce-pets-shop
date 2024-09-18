@@ -27,11 +27,18 @@ import Error404 from "./comp/Error404";
 
 import Payment from "./pages/Payment";
 import OrderSummary from "./pages/OrderSummary";
-import { AdminHome } from "./admin/adminPages/AdminHome";
+
+import  AdminHome  from "./admin/adminPages/AdminHome";
+import UserDetails from "./admin/adminComp/UserDetails";
+import Allproducts from "./admin/adminPages/Allproducts";
+import Addproducts from "./admin/adminPages/Addproducts";
+import UserList from "./admin/adminPages/UserList";
+import AdCat from "./admin/catDog/AdCat";
+import AdDog from "./admin/catDog/AdDog";
 
 function App() {
   const location=useLocation();
-  const sholudHidden=location.pathname==="/login"||location.pathname==="/register" || location.pathname.startsWith("/admin")
+  const sholudHidden=location.pathname==="/login"||location.pathname==="/register" || location.pathname.startsWith("/admin") 
   return (
     <div>
       {!sholudHidden&&<Navbar/>}
@@ -63,7 +70,7 @@ function App() {
         </Route>
           
           {/* product deatails */}
-        <Route path="/:id" element={<Pdetails />} />
+        <Route path="/item/:id" element={<Pdetails />} />
 
         {/* cart */}
         <Route path="/cart" element={<Cart />} />
@@ -79,8 +86,22 @@ function App() {
 
         {/* admin */}
         <Route path="/admin" element={<AdminHome></AdminHome>}>
+
+        <Route path="userd/:u" element={<UserDetails />} /> 
+
+        <Route index element={<UserList/>}/>
+        <Route path="alluser" element={<UserList/>}/>
+        <Route path="allpro" element={<Allproducts/>}>
         
         </Route>
+        <Route path="addpro" element={<Addproducts/>}/>
+
+        <Route path="allpro/catall" element={<AdCat/>}/>
+        <Route path="allpro/dogall" element={<AdDog/>}/>
+        
+        </Route>
+        
+       
 
   
       </Routes>

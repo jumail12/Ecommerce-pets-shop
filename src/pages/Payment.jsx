@@ -61,7 +61,7 @@ const nav=useNavigate();
     const Log=localStorage.getItem("id");
 
     try{
-        await axios.patch(`http://localhost:3001/users/${Log}`,{order:{...orderItems,ShippingAddress:[formData],OrderItems:CartItems,Amount:Total,date:now,orderId:randomNum}});
+        await axios.patch(`http://localhost:3001/users/${Log}`,{order:{ShippingAddress:[formData],OrderItems:CartItems,Amount:Total,date:now,orderId:randomNum}});
         await axios.patch(`http://localhost:3001/users/${Log}`,{cart:[]});  //cart will be null after payment 
         nav("/summary" ,{replace:true});
 

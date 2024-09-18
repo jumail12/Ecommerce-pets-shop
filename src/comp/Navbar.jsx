@@ -41,7 +41,7 @@ const Navbar = () => {
     const handleNavSearch=(id)=>{
       const filter=queryFilter.filter((item)=>item.id===id);
       if(filter){
-        navigate(`/${id}`);
+        navigate(`/item/${id}`);
         setSearchTerm("");
       }
     }
