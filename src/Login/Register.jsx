@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import {ToastContainer,toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
   const nav=useNavigate();
@@ -79,7 +81,8 @@ const Register = () => {
 
         const userEmail=data.find((user)=>user.email===Fvalues.email)
        if(userEmail){
-        alert("email alredy taken...!")
+        // alert("email alredy taken...!")
+        toast.warn("Email is alredy taken...!")
        }else{
         
        await axios.post("http://localhost:3001/users",{
@@ -88,6 +91,7 @@ const Register = () => {
           email: Fvalues.email,
           mob: Fvalues.mob,
           password: Fvalues.password,
+          block:false,
           cart:[],
           order:{}
         });  
@@ -106,6 +110,7 @@ const Register = () => {
 
   return (
     <div className='p-6 m-10'>
+      <ToastContainer/>
     <div className="max-w-md mx-auto p-6 bg-gray-200 shadow-lg rounded-lg mt-10">
     <h1 className="text-3xl font-bold mb-6 text-center">Register</h1>
     <form onSubmit={handleSubmit} className="space-y-4">

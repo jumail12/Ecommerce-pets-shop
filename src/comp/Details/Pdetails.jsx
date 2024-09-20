@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { HnadleAddcart } from '../../context/Data';
 import { useParams } from 'react-router-dom'
+import {ToastContainer,toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -39,6 +41,7 @@ const Pdetails = () => {
     
   return (
     <div className="p-8">
+      <ToastContainer/>
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img title='Home' src="https://img.freepik.com/premium-vector/vector-dog-cat-logo-with-pet-shop-text_995281-23121.jpg?size=626&ext=jpg&ga=GA1.1.326306754.1725864249&semt=ais_hybrid" className="h-8 rounded-md" alt="Logo" />
         </Link>

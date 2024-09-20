@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import {ToastContainer,toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -40,6 +42,7 @@ const SignUp = () => {
 
     if (Validate(Fvalues)) {
       const user = userData.find((user) => user.email === Fvalues.email);
+      
       const admin=user.admin;
 
       if(admin){
@@ -47,11 +50,15 @@ const SignUp = () => {
         localStorage.setItem("id", user.id);
         localStorage.setItem("user", user.lastName);
         navigate("/admin",{ replace: true });
-      }else if(user ){
+      }else if(user&&!user.block){
         localStorage.setItem("id", user.id);
         localStorage.setItem("user", user.lastName);
         navigate("/", { replace: true });
         window.location.reload();
+      }
+      else{
+        // alert("Your account is blocked!")
+        toast.warning("Your account is blocked!");
       }
       
       
@@ -62,6 +69,7 @@ const SignUp = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+       <ToastContainer />
       <div className="max-w-4xl w-full flex bg-white shadow-lg rounded-lg overflow-hidden">
         {/* Image Section */}
         <div className="hidden md:block md:w-1/2 bg-cover" style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2024/04/05/20/17/ai-generated-8678181_960_720.jpg')` }}>

@@ -23,10 +23,10 @@ const UserDetails = () => {
   const { ShippingAddress = [], OrderItems = [] } = order;
 
   return (
-    <div className="p-8 min-h-screen bg-gradient-to-r from-blue-500 to-red-500 text-white">
+    <div className="p-4 md:p-8 min-h-screen bg-gradient-to-r from-blue-500 to-red-500 text-white">
       {/* User Details */}
-      <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg mb-6">
-        <h1 className="text-3xl font-bold mb-4 text-blue-600">
+      <div className="bg-white text-gray-800 p-4 md:p-6 rounded-lg shadow-lg mb-6">
+        <h1 className="text-2xl md:text-3xl font-bold mb-4 text-blue-600">
           {udata.firstName} {udata.lastName}
         </h1>
         <div className="mb-4">
@@ -37,13 +37,13 @@ const UserDetails = () => {
 
         {/* Shipping Address */}
         <div className="mb-4">
-          <h1 className="text-xl font-bold text-red-600">Shipping Address:</h1>
+          <h1 className="text-lg md:text-xl font-bold text-red-600">Shipping Address:</h1>
           {ShippingAddress.length > 0 ? (
             ShippingAddress.map((address, index) => (
-              <div key={index} className="mb-2 bg-blue-100 p-4 rounded-lg">
-                <p className='text-md font-semibold'>{address.address}</p>
-                <p className='text-md font-semibold'>{address.city}, {address.state}, {address.zip}</p>
-                <p className='text-md font-semibold'><strong className="text-blue-600">Payment Method:</strong> {address.paymentMethod}</p>
+              <div key={index} className="mb-2 p-4 rounded-lg bg-blue-100">
+                <p className="text-sm md:text-md font-semibold">{address.address}</p>
+                <p className="text-sm md:text-md font-semibold">{address.city}, {address.state}, {address.zip}</p>
+                <p className="text-sm md:text-md font-semibold"><strong className="text-blue-600">Payment Method:</strong> {address.paymentMethod}</p>
               </div>
             ))
           ) : (
@@ -53,17 +53,23 @@ const UserDetails = () => {
 
         {/* Order Items */}
         <div className="mb-4">
-          <h1 className="text-xl font-bold text-red-600">Order Items:</h1>
+          <h1 className="text-lg md:text-xl font-bold text-red-600">Order Items:</h1>
           {OrderItems.length > 0 ? (
             OrderItems.map((item) => (
-              <div key={item.id} className="border p-4 mb-4 rounded-lg shadow-lg flex items-start bg-blue-100">
+              <div key={item.id} className="border p-4 mb-4 rounded-lg shadow-lg flex flex-col md:flex-row items-start bg-blue-100">
                 {/* Image Section */}
-                <img src={item.url} alt={item.heading} className="w-32 h-32 object-cover mr-4 rounded-lg border-2 border-blue-600" />
+                <img
+                  src={item.url}
+                  alt={item.heading}
+                  className="w-full md:w-32 h-32 object-cover mb-4 md:mb-0 mr-0 md:mr-4 rounded-lg border-2 border-blue-600"
+                />
 
                 {/* Item Details */}
-                <div>
-                  <h3 className="text-lg font-bold text-blue-600">{item.heading}</h3>
-                  <p className="font-semibold mt-2 text-red-600"><strong>Price:</strong> ${item.price}</p>
+                <div className="w-full">
+                  <h3 className="text-md md:text-lg font-bold text-blue-600">{item.heading}</h3>
+                  <p className="font-semibold mt-2 text-red-600">
+                    <strong>Price:</strong> ${item.price}
+                  </p>
                   <p><strong>Quantity:</strong> {item.qty}</p>
                 </div>
               </div>

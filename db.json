@@ -7,6 +7,7 @@
       "email": "jumailjumi2003@gmail.com",
       "mob": "9847193231",
       "password": "111111",
+      "block": false,
       "cart": [],
       "order": {
         "ShippingAddress": [
@@ -15,43 +16,7 @@
             "city": "cherpulassery",
             "state": "kerala",
             "zip": "679503",
-            "paymentMethod": "UPI"
-          }
-        ],
-        "OrderItems": [
-          {
-            "id": "46",
-            "heading": "Temptations™ Mixups Adult Cat Treats - Soft & Crunchy, Surfers' Delight",
-            "discription": "Did your fussy feline greet you with a chorus of purrs when you got home? Reward your fur-ever friend with a mix-n-match of their favorite playtime cat treats",
-            "url": "https://s7d2.scene7.com/is/image/PetSmart/5221467?fmt=webp&wid=1400&hei=1400",
-            "catogory": "cat-treat",
-            "price": "9",
-            "rating": "4",
-            "qty": 1
-          }
-        ],
-        "Amount": 9,
-        "date": "2024-09-19T09:31:02.794Z",
-        "orderId": 863539
-      },
-      "admin": true
-    },
-    {
-      "id": "63c9",
-      "firstName": "Muhammed",
-      "lastName": "xyz",
-      "email": "munavvirmuhammed296@gmail.com",
-      "mob": "1111111111",
-      "password": "111111",
-      "cart": [],
-      "order": {
-        "ShippingAddress": [
-          {
-            "address": "korrikaatil , poothakkad , veramangalm,",
-            "city": "cherpulassery",
-            "state": "kerala",
-            "zip": "679503",
-            "paymentMethod": "UPI"
+            "paymentMethod": "CARD"
           }
         ],
         "OrderItems": [
@@ -64,75 +29,66 @@
             "price": 55,
             "rating": 4,
             "qty": 1
-          },
-          {
-            "id": "10",
-            "heading": "Butcher's Joints & Coat Wet Adult Dog Food 18x390g",
-            "discription": "Promotes healthy joints, skin, and coat with a balanced, grain-free recipe. Vet endorsed for adult dogs",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7135238.jpg",
-            "catogory": "dog-food",
-            "price": 15,
-            "rating": 4.5,
-            "qty": 1
           }
         ],
-        "Amount": 70,
-        "date": "2024-09-19T10:36:05.469Z",
-        "orderId": 129493
-      }
+        "Amount": 55,
+        "date": "2024-09-20T09:09:53.468Z",
+        "orderId": 786970
+      },
+      "admin": true
     },
     {
-      "id": "42c3",
+      "id": "30f6",
       "firstName": "João",
-      "lastName": "faris",
-      "email": "teste@exemplo.us",
-      "mob": "2222222222",
-      "password": "222222",
+      "lastName": "Souza ",
+      "email": "lll@gmail.com",
+      "mob": "1212121212",
+      "password": "121212",
+      "block": false,
       "cart": [],
       "order": {}
     },
     {
-      "id": "9be1",
-      "firstName": "abcd",
-      "lastName": "Souza",
-      "email": "kkkk@hhh.com",
+      "id": "9c97",
+      "firstName": "salman",
+      "lastName": "faris",
+      "email": "salman@gmial.com",
       "mob": "1111111111",
-      "password": "222222",
+      "password": "111111",
+      "block": false,
       "cart": [],
-      "order": {
-        "ShippingAddress": [
-          {
-            "address": "korrikaatil , poothakkad , veramangalm,",
-            "city": "cherpulassery",
-            "state": "kerala",
-            "zip": "679503",
-            "paymentMethod": "CASH"
-          }
-        ],
-        "OrderItems": [
-          {
-            "id": "6",
-            "heading": "Harringtons Complete Natural Adult Dry Dog Food Turkey & Veg 15kg",
-            "discription": "This improved recipe food contains Vitamins, minerals and Omega 3 & 6 in the form of salmon oil to support overall health, maintain a healthy coat and reduce flatulence odour.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_37036.jpg",
-            "catogory": "dog-food",
-            "price": 34,
-            "rating": 4.5,
-            "qty": 1
-          }
-        ],
-        "Amount": 34,
-        "date": "2024-09-18T06:23:17.878Z",
-        "orderId": 322667
-      }
+      "order": {}
     },
     {
-      "id": "c707",
+      "id": "1286",
+      "firstName": "Muh",
+      "lastName": "shanoof",
+      "email": "shanoof@gm.com",
+      "mob": "1111111111",
+      "password": "111111",
+      "block": false,
+      "cart": [],
+      "order": {}
+    },
+    {
+      "id": "76c6",
       "firstName": "Np",
       "lastName": "sreeShanth",
       "email": "sree@123gmail.com",
-      "mob": "1234567890",
+      "mob": "1111111111",
+      "password": "111111",
+      "block": false,
+      "cart": [],
+      "order": {}
+    },
+    {
+      "id": "d0df",
+      "firstName": "pp shashi",
+      "lastName": "shashi",
+      "email": "mun@gmail.com",
+      "mob": "8585858578",
       "password": "123456",
+      "block": false,
       "cart": [],
       "order": {
         "ShippingAddress": [
@@ -146,81 +102,6 @@
         ],
         "OrderItems": [
           {
-            "id": "6",
-            "heading": "Harringtons Complete Natural Adult Dry Dog Food Turkey & Veg 15kg",
-            "discription": "This improved recipe food contains Vitamins, minerals and Omega 3 & 6 in the form of salmon oil to support overall health, maintain a healthy coat and reduce flatulence odour.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_37036.jpg",
-            "catogory": "dog-food",
-            "price": 34,
-            "rating": 4.5,
-            "qty": 1
-          },
-          {
-            "id": "1",
-            "heading": "Pets at Home Degradable Dog Poop Bags 200 Pack+20 Extra Free",
-            "discription": "Easily carry and hygienically dispose of dog waste with tie-handle bags. Portable, quick-dispensing pack offers great value with 20 extra bags.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7137876.jpg",
-            "catogory": "dog-food",
-            "price": 2,
-            "rating": 3.5,
-            "qty": 1
-          },
-          {
-            "id": "4",
-            "heading": "AVA Optimum Health Medium Breed Adult Dry Dog Food Chicken 15kg",
-            "discription": "Digestible chicken protein with omega 3 & 6, vitamins, minerals, and a tailored kibble. Supports digestion, skin, coat, joints, and oral health.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7120070.jpg",
-            "catogory": "dog-food",
-            "price": 47,
-            "rating": 4,
-            "qty": 1
-          },
-          {
-            "id": "10",
-            "heading": "Butcher's Joints & Coat Wet Adult Dog Food 18x390g",
-            "discription": "Promotes healthy joints, skin, and coat with a balanced, grain-free recipe. Vet endorsed for adult dogs",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7135238.jpg",
-            "catogory": "dog-food",
-            "price": 15,
-            "rating": 4.5,
-            "qty": 1
-          }
-        ],
-        "Amount": 98,
-        "date": "2024-09-18T10:48:49.287Z",
-        "orderId": 847497
-      }
-    },
-    {
-      "id": "73eb",
-      "firstName": "Fathima ",
-      "lastName": "Jesliya",
-      "email": "jesliya@gmail.com",
-      "mob": "0000000000",
-      "password": "zzzzzz",
-      "cart": [],
-      "order": {
-        "ShippingAddress": [
-          {
-            "address": "korrikaatil , poothakkad , veramangalm,",
-            "city": "cherpulassery",
-            "state": "kerala",
-            "zip": "679503",
-            "paymentMethod": "CASH"
-          }
-        ],
-        "OrderItems": [
-          {
-            "id": "10",
-            "heading": "Butcher's Joints & Coat Wet Adult Dog Food 18x390g",
-            "discription": "Promotes healthy joints, skin, and coat with a balanced, grain-free recipe. Vet endorsed for adult dogs",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7135238.jpg",
-            "catogory": "dog-food",
-            "price": 15,
-            "rating": 4.5,
-            "qty": 1
-          },
-          {
             "id": "11",
             "heading": "Pets at Home Teddy Oval Dog Bed Dark Grey",
             "discription": "Enjoy a cosy, easy-to-clean bed with a removable dual-sided cushion and super soft lining for your dogs ultimate comfort.",
@@ -228,32 +109,12 @@
             "catogory": "dog-beds",
             "price": 26,
             "rating": 4.5,
-            "qty": 1
-          },
-          {
-            "id": "25",
-            "heading": "Purina ONE Adult Mini Fillets Wet Cat Food Gravy 40x85g",
-            "discription": "Supports gut balance with soluble fibres, nourishes bones, muscles, joint health, and promotes radiant skin and coat. Delicious, high-quality protein included.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7135257.jpg",
-            "catogory": "cat-food",
-            "price": 16,
-            "rating": 4.5,
-            "qty": 1
-          },
-          {
-            "id": "22",
-            "heading": "Pets at Home Adult Cat Wet Food Chunks in Jelly Variety 24x400g",
-            "discription": "Four tasty flavours, supporting heart, eyes, and immune health with no artificial additives for a complete and balanced meal",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7142129.jpg",
-            "catogory": "cat-food",
-            "price": 16,
-            "rating": 4.5,
-            "qty": 1
+            "qty": 5
           }
         ],
-        "Amount": 73,
-        "date": "2024-09-19T05:31:11.631Z",
-        "orderId": 654008
+        "Amount": 130,
+        "date": "2024-09-20T06:49:03.644Z",
+        "orderId": 321338
       }
     }
   ],
@@ -265,7 +126,7 @@
       "url": "https://cdn.petsathome.com/public/images/products/900_7137876.jpg",
       "catogory": "dog-food",
       "price": "7",
-      "rating": "3.7",
+      "rating": "3.8",
       "qty": 1
     },
     {
@@ -676,6 +537,36 @@
       "catogory": "cat-treat",
       "price": "16",
       "rating": "3.8",
+      "qty": 1
+    },
+    {
+      "id": "49",
+      "heading": "Gourmet Nature's Creations Wet Cat Food Chicken & Turkey 8x85g",
+      "discription": "Complete, balanced food for adult cats, featuring slow-cooked chicken and turkey with natural ingredients, free from artificial additives.",
+      "url": "https://cdn.petsathome.com/public/images/products/900_7137642.jpg",
+      "catogory": "cat-food",
+      "price": "6",
+      "rating": "3.9",
+      "qty": 1
+    },
+    {
+      "id": "50",
+      "heading": "Pets at Home Linen Scallop Dog Bed Blue",
+      "discription": "Stylish in its simplicity, this linen bed from Pets at Home is a cosy place for your dog to rest. The super soft inner lining creates a comfortable nook for snoozing, chilling and watching the world go by",
+      "url": "https://cdn.petsathome.com/public/images/products/900_P71625.jpg",
+      "catogory": "dog-beds",
+      "price": "30",
+      "rating": "3.8",
+      "qty": 1
+    },
+    {
+      "id": "51",
+      "heading": "Lily's Kitchen Adult Dry Dog Food Chicken & Duck 2.5kg",
+      "discription": "Nutritionally complete food made with quality meat and vegetable blend. With added vitamins and Omega-3 to help maintain overall health and prebiotics to support digestion. With no artificial additives.",
+      "url": "https://cdn.petsathome.com/public/images/products/900_7108807.jpg",
+      "catogory": "dog-food",
+      "price": "18",
+      "rating": "4",
       "qty": 1
     }
   ]

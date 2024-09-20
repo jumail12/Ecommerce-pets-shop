@@ -1,5 +1,6 @@
 import axios from "axios";
-
+import {ToastContainer,toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 //add
 
@@ -15,18 +16,21 @@ export const HnadleAddcart=async (item)=>{
           const exist=currentCart.find((cart)=>cart.id===item.id);
 
           if(exist){
-            alert("Item alredy in your cart");
+            // alert("Item alredy in your cart");
+            toast.error("Item alredy in your cart")
           }else{
             const updateCart=[...currentCart,item];
             await axios.patch(`http://localhost:3001/users/${user}`,{cart:updateCart});
-            alert("Item Successfully added to the cart..!")
+            // alert("Item Successfully added to the cart..!")
+            toast.success("Item Successfully added to the cart..!")
           }
         }
         catch{
             console.log("Error...!");
         }
     }else{
-        alert("Login to continue")
+        // alert("Login to continue")
+        toast.error("Login to continue")
     }
      
 }
@@ -36,7 +40,8 @@ export const HnadleAddcart=async (item)=>{
 export const Remove= async(CartId)=>{
     const userId=localStorage.getItem("id");
     if(!userId){
-        alert("Plese Login..!")
+        // alert("Plese Login..!")
+        toast.error("Please Login..!")
     }else{
         try{
             const resp=await axios.get(`http://localhost:3001/users/${userId}`)
@@ -47,6 +52,7 @@ export const Remove= async(CartId)=>{
             await axios.patch(`http://localhost:3001/users/${userId}`,{
                 cart:UpdateCart
             });
+            toast.error("Item Removed!")
         }
         catch{
             console.log("Error...!");

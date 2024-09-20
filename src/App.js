@@ -44,6 +44,7 @@ function App() {
     <div>
       {!sholudHidden&&<Navbar/>}
       <Routes>
+
         {/* Home */}
         <Route path="/" element={<Home />} />
 
@@ -86,6 +87,8 @@ function App() {
         <Route path="/summary" element={<OrderSummary />} />
 
         {/* admin */}
+
+        
         <Route path="/admin" element={<AdminHome></AdminHome>}>
 
         <Route path="userd/:u" element={<UserDetails />} /> 
@@ -102,17 +105,8 @@ function App() {
         
         </Route>
         
-       
-
-  
       </Routes>
       {!sholudHidden&&<Footer/>}
-
-      
-              
-      
-
-      
     </div>
   );
 }

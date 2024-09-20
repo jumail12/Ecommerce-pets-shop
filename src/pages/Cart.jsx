@@ -3,6 +3,8 @@ import React, {  useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { Remove } from '../context/Data';
+import {ToastContainer,toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Cart = () => {
@@ -104,6 +106,7 @@ const handlePayment =()=>{
 
   return (
     <div className="container mx-auto p-4">
+      <ToastContainer/>
 
     <h1 className="text-3xl font-bold mb-6">Your Cart.</h1>
     <div>
