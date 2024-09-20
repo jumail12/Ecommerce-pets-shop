@@ -15,24 +15,24 @@
             "city": "cherpulassery",
             "state": "kerala",
             "zip": "679503",
-            "paymentMethod": "CASH"
+            "paymentMethod": "UPI"
           }
         ],
         "OrderItems": [
           {
-            "id": "1",
-            "heading": "Pets at Home Degradable Dog Poop Bags 200 Pack+20 Extra Free",
-            "discription": "Easily carry and hygienically dispose of dog waste with tie-handle bags. Portable, quick-dispensing pack offers great value with 20 extra bags.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7137876.jpg",
-            "catogory": "dog-food",
-            "price": 2,
-            "rating": 3.5,
-            "qty": 6
+            "id": "46",
+            "heading": "Temptations™ Mixups Adult Cat Treats - Soft & Crunchy, Surfers' Delight",
+            "discription": "Did your fussy feline greet you with a chorus of purrs when you got home? Reward your fur-ever friend with a mix-n-match of their favorite playtime cat treats",
+            "url": "https://s7d2.scene7.com/is/image/PetSmart/5221467?fmt=webp&wid=1400&hei=1400",
+            "catogory": "cat-treat",
+            "price": "9",
+            "rating": "4",
+            "qty": 1
           }
         ],
-        "Amount": 12,
-        "date": "2024-09-17T15:52:00.800Z",
-        "orderId": 402728
+        "Amount": 9,
+        "date": "2024-09-19T09:31:02.794Z",
+        "orderId": 863539
       },
       "admin": true
     },
@@ -51,7 +51,7 @@
             "city": "cherpulassery",
             "state": "kerala",
             "zip": "679503",
-            "paymentMethod": "CASH"
+            "paymentMethod": "UPI"
           }
         ],
         "OrderItems": [
@@ -66,19 +66,19 @@
             "qty": 1
           },
           {
-            "id": "1",
-            "heading": "Pets at Home Degradable Dog Poop Bags 200 Pack+20 Extra Free",
-            "discription": "Easily carry and hygienically dispose of dog waste with tie-handle bags. Portable, quick-dispensing pack offers great value with 20 extra bags.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_7137876.jpg",
+            "id": "10",
+            "heading": "Butcher's Joints & Coat Wet Adult Dog Food 18x390g",
+            "discription": "Promotes healthy joints, skin, and coat with a balanced, grain-free recipe. Vet endorsed for adult dogs",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7135238.jpg",
             "catogory": "dog-food",
-            "price": 2,
-            "rating": 3.5,
+            "price": 15,
+            "rating": 4.5,
             "qty": 1
           }
         ],
-        "Amount": 57,
-        "date": "2024-09-18T09:19:54.658Z",
-        "orderId": 213256
+        "Amount": 70,
+        "date": "2024-09-19T10:36:05.469Z",
+        "orderId": 129493
       }
     },
     {
@@ -190,17 +190,82 @@
         "date": "2024-09-18T10:48:49.287Z",
         "orderId": 847497
       }
+    },
+    {
+      "id": "73eb",
+      "firstName": "Fathima ",
+      "lastName": "Jesliya",
+      "email": "jesliya@gmail.com",
+      "mob": "0000000000",
+      "password": "zzzzzz",
+      "cart": [],
+      "order": {
+        "ShippingAddress": [
+          {
+            "address": "korrikaatil , poothakkad , veramangalm,",
+            "city": "cherpulassery",
+            "state": "kerala",
+            "zip": "679503",
+            "paymentMethod": "CASH"
+          }
+        ],
+        "OrderItems": [
+          {
+            "id": "10",
+            "heading": "Butcher's Joints & Coat Wet Adult Dog Food 18x390g",
+            "discription": "Promotes healthy joints, skin, and coat with a balanced, grain-free recipe. Vet endorsed for adult dogs",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7135238.jpg",
+            "catogory": "dog-food",
+            "price": 15,
+            "rating": 4.5,
+            "qty": 1
+          },
+          {
+            "id": "11",
+            "heading": "Pets at Home Teddy Oval Dog Bed Dark Grey",
+            "discription": "Enjoy a cosy, easy-to-clean bed with a removable dual-sided cushion and super soft lining for your dogs ultimate comfort.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_P70983.jpg",
+            "catogory": "dog-beds",
+            "price": 26,
+            "rating": 4.5,
+            "qty": 1
+          },
+          {
+            "id": "25",
+            "heading": "Purina ONE Adult Mini Fillets Wet Cat Food Gravy 40x85g",
+            "discription": "Supports gut balance with soluble fibres, nourishes bones, muscles, joint health, and promotes radiant skin and coat. Delicious, high-quality protein included.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7135257.jpg",
+            "catogory": "cat-food",
+            "price": 16,
+            "rating": 4.5,
+            "qty": 1
+          },
+          {
+            "id": "22",
+            "heading": "Pets at Home Adult Cat Wet Food Chunks in Jelly Variety 24x400g",
+            "discription": "Four tasty flavours, supporting heart, eyes, and immune health with no artificial additives for a complete and balanced meal",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7142129.jpg",
+            "catogory": "cat-food",
+            "price": 16,
+            "rating": 4.5,
+            "qty": 1
+          }
+        ],
+        "Amount": 73,
+        "date": "2024-09-19T05:31:11.631Z",
+        "orderId": 654008
+      }
     }
   ],
   "products": [
     {
       "id": "1",
-      "heading": "Pets at Home Degradable Dog Poop Bags 200 Pack+20 Extra Free",
+      "heading": "Pets at Home Degradable Dog Poop Bags 200 Pack+20 Extra Free !",
       "discription": "Easily carry and hygienically dispose of dog waste with tie-handle bags. Portable, quick-dispensing pack offers great value with 20 extra bags.",
       "url": "https://cdn.petsathome.com/public/images/products/900_7137876.jpg",
       "catogory": "dog-food",
-      "price": 2,
-      "rating": 3.5,
+      "price": "7",
+      "rating": "3.7",
       "qty": 1
     },
     {
@@ -231,16 +296,6 @@
       "catogory": "dog-food",
       "price": 47,
       "rating": 4,
-      "qty": 1
-    },
-    {
-      "id": "5",
-      "heading": "Wainwright's Sensitive Adult Dry Dog Food Atlantic Salmon With Superfoods",
-      "discription": "A hypoallergenic, balanced dry food with no added wheat, pork, dairy, or artificial additives, made from a single protein source.",
-      "url": "https://cdn.petsathome.com/public/images/products/900_7145754.jpg",
-      "catogory": "dog-food",
-      "price": 9,
-      "rating": 3.5,
       "qty": 1
     },
     {
@@ -554,16 +609,6 @@
       "qty": 1
     },
     {
-      "id": "37",
-      "heading": "Applaws Natural Adult Cat Treat Tuna Loin 30g",
-      "discription": "100% tuna fillet treat, rich in natural Omega-3, with no hidden additives.",
-      "url": "https://cdn.petsathome.com/public/images/products/900_7103187.jpg",
-      "catogory": "cat-treat",
-      "price": 2,
-      "rating": 3.5,
-      "qty": 1
-    },
-    {
       "id": "38",
       "heading": "Whiskas Kitten Cat Milk 600ml",
       "discription": "Low-lactose milk for easy digestion, enriched with calcium for strong bones and development. Free from artificial additives, suitable for kittens over 6 weeks.",
@@ -594,16 +639,6 @@
       "qty": 1
     },
     {
-      "id": "41",
-      "heading": "Pedigree Tasty Minis Adult Dog Cheese & Beef Nibbles 140g",
-      "discription": "Dogs love to be rewarded - Pedigree Tasty Bites are a range of tantalisingly tasty bite-sized Pedigree treats for dogs",
-      "url": "https://cdn.petsathome.com/public/images/products/900_7107743.jpg",
-      "catogory": "dog-food",
-      "price": "2",
-      "rating": "4",
-      "qty": 1
-    },
-    {
       "id": "42",
       "heading": "Royal Canin Labrador Retriever Adult Dry Dog Food 12kg",
       "discription": "Supports skin health, maintains strong bones, joints, and a healthy coat. Tailored kibble shape aids in weight management.",
@@ -614,13 +649,33 @@
       "qty": 1
     },
     {
-      "id": "43",
-      "heading": "Pets at Home Explorer Dog Crate Mat Slate Grey",
-      "discription": "Cosy Berber fleece mat, perfect for dog crates. Easy to clean for hassle-free upkeep.",
-      "url": "https://cdn.petsathome.com/public/images/products/900_7135294.jpg",
-      "catogory": "dog-beds",
-      "price": "12",
+      "id": "45",
+      "heading": "Fancy Feast® All Life Stages Cat Wet Food - Variety Pack, 30 CT, 90 OZ",
+      "discription": "Tempt your cat s taste buds with Purina Fancy Feast Classic Seafood Feast Collection Wet Cat Food. Real fish and seafood in every can give her the ocean flavors cats love, and the smooth pate texture is soft to the tooth for a truly gourmet dining experience",
+      "url": "https://s7d2.scene7.com/is/image/PetSmart/5263571?fmt=webp&wid=1400&hei=1400",
+      "catogory": "cat-food",
+      "price": "23",
+      "rating": "3.9",
+      "qty": 1
+    },
+    {
+      "id": "46",
+      "heading": "Temptations™ Mixups Adult Cat Treats - Soft & Crunchy, Surfers' Delight",
+      "discription": "Did your fussy feline greet you with a chorus of purrs when you got home? Reward your fur-ever friend with a mix-n-match of their favorite playtime cat treats",
+      "url": "https://s7d2.scene7.com/is/image/PetSmart/5221467?fmt=webp&wid=1400&hei=1400",
+      "catogory": "cat-treat",
+      "price": "9",
       "rating": "4",
+      "qty": 1
+    },
+    {
+      "id": "47",
+      "heading": "kit Cat Puree Tuna & smoked Fish",
+      "discription": "Contains a smooth blend with tuna, with no added colors or preservatives and is perfect for cats of all life stages Grain-free, delicious and 100% natural - this will be the most irresistible and ideal treat your cat will crave. Product Features: - Omega 3 & 6 - Taurine Added - Prebiotic Vitamin E - Grain Free - Puree that can be feed from satched, in clean bowl or as topping - 4-Individual servings Made in Thailand Feed as treat, for complementary use only.",
+      "url": "https://petskyonline.com/cdn/products/8618ac6789d44c3baaaf55eb1e6c0781-md.jpg",
+      "catogory": "cat-treat",
+      "price": "16",
+      "rating": "3.8",
       "qty": 1
     }
   ]

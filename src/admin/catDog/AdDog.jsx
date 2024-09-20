@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const AdDog = () => {
     const [allp, setAllp] = useState([]);
@@ -12,9 +13,30 @@ const AdDog = () => {
   
     useEffect(() => {
       data();
-    }, []);
+    }, [allp]);
 
     const dogPro=allp.filter((item)=>item.catogory==="dog-beds" ||item.catogory==="dog-food"  )
+
+      // delete
+
+  const handleDelete=async(id)=>{
+    try{
+     const res= await axios.delete(`http://localhost:3001/products/${id}`);
+     alert("Item Deleted..!")
+     console.log(res.data);
+    }
+    catch{
+         console.log("error");
+    }
+  }
+
+    // edit fucntion
+const nav=useNavigate();
+const editDta=async(id)=>{
+  nav(`/admin/edit/${id}`)
+
+}
+ 
     
     
 
@@ -42,9 +64,15 @@ const AdDog = () => {
                 <h2 className="text-lg font-semibold text-gray-800">{item.heading}</h2>
                 <p className="text-gray-600 mt-1">Rating: ⭐ {item.rating}</p>
                 <p className="text-gray-900 font-bold mt-2">${item.price}</p>
-                {/* <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-                 
-                </button> */}
+
+                <div className="flex space-x-2 mt-4">
+                    <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition duration-300" onClick={()=>handleDelete(item.id)}>
+                      Delete
+                    </button>
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300" onClick={()=>editDta(item.id)}>
+                      Edit
+                    </button>
+                  </div>
               </div>
             </div>
           ))}

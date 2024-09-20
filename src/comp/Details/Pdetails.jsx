@@ -3,7 +3,8 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { HnadleAddcart } from '../../context/Data';
 import { useParams } from 'react-router-dom'
-import { ContextData } from '../../context/Data'; 
+
+
 
 const Pdetails = () => {
     const {id}=useParams();
@@ -30,7 +31,8 @@ const Pdetails = () => {
 
     // add to cart functinalities
     const  addItem=async (item)=>{
-      await HnadleAddcart(item)    
+      await HnadleAddcart(item)   
+      
     }
 
     
@@ -60,9 +62,11 @@ const Pdetails = () => {
           <p className="text-lg text-gray-500 mb-4">Rating: ⭐ {item.rating} / 5</p>
 
           {/* Action Button */}
+  
           <button className="bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700 transition-colors duration-300" onClick={()=>addItem(item)}>
             Add to Cart
           </button>
+       
         </div>
       </div>
     </div>

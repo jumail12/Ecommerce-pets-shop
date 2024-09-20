@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu
@@ -69,6 +71,7 @@ const Navbar = () => {
     setIsAuthenticated(false);
     setIsDropdownOpen(false); 
     window.location.reload();
+    
     
     // Close dropdown after logout
   };

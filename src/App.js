@@ -35,6 +35,7 @@ import Addproducts from "./admin/adminPages/Addproducts";
 import UserList from "./admin/adminPages/UserList";
 import AdCat from "./admin/catDog/AdCat";
 import AdDog from "./admin/catDog/AdDog";
+import UpdateP from "./admin/adminPages/UpdateP";
 
 function App() {
   const location=useLocation();
@@ -88,16 +89,16 @@ function App() {
         <Route path="/admin" element={<AdminHome></AdminHome>}>
 
         <Route path="userd/:u" element={<UserDetails />} /> 
-
-        <Route index element={<UserList/>}/>
+        {/* <Route index element={<UserList/>}/> */}
         <Route path="alluser" element={<UserList/>}/>
-        <Route path="allpro" element={<Allproducts/>}>
-        
-        </Route>
-        <Route path="addpro" element={<Addproducts/>}/>
 
+        <Route index element={<Allproducts/>}/>
+        <Route path="allpro" element={<Allproducts/>}/>
+        <Route path="addpro" element={<Addproducts/>}/>
         <Route path="allpro/catall" element={<AdCat/>}/>
         <Route path="allpro/dogall" element={<AdDog/>}/>
+
+        <Route path="edit/:eid" element={<UpdateP/>}/>
         
         </Route>
         
