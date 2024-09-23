@@ -1,7 +1,7 @@
+import { ChartBarIcon, UserIcon, HomeIcon, TagIcon, PlusIcon, ArrowLeftOnRectangleIcon } from '@heroicons/react/24/solid';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
-import { UserIcon, HomeIcon, TagIcon, PlusIcon, ArrowLeftOnRectangleIcon } from '@heroicons/react/24/solid';
 
 const AdminHome = () => {
   const id = localStorage.getItem("id");
@@ -45,6 +45,11 @@ const AdminHome = () => {
       >
         <h2 className="text-2xl font-bold mb-6">Admin Panel</h2>
         <nav className="flex flex-col space-y-4">
+         
+          <Link to="dashboard" className="flex items-center text-white hover:text-blue-300 font-semibold">
+            <ChartBarIcon className="h-6 w-6 mr-2" /> Dashboard
+          </Link>
+
           <Link to="alluser" className="flex items-center text-white hover:text-blue-300 font-semibold">
             <UserIcon className="h-6 w-6 mr-2" /> All Users
           </Link>

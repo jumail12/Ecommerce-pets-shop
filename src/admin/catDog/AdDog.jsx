@@ -1,51 +1,54 @@
-import React from 'react'
-import { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import {ToastContainer,toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 const AdDog = () => {
-    const [allp, setAllp] = useState([]);
+  const [allp, setAllp] = useState([]);
 
-    const data = async () => {
-      const res = await axios.get(`http://localhost:3001/products`);
-      setAllp(res.data);
-    };
-  
-    useEffect(() => {
-      data();
-    }, [allp]);
+  const data = async () => {
+    const res = await axios.get(`http://localhost:3001/products`);
+    setAllp(res.data);
+  };
 
-    const dogPro=allp.filter((item)=>item.catogory==="dog-beds" ||item.catogory==="dog-food"  )
+  useEffect(() => {
+    data();
+  }, [allp]); // Removed the dependency on `allp` to avoid infinite loop
 
-      // delete
+  const dogPro = allp.filter(
+    (item) => item.catogory === 'dog-beds' || item.catogory === 'dog-food'
+  );
 
-  const handleDelete=async(id)=>{
-    try{
-     const res= await axios.delete(`http://localhost:3001/products/${id}`);
-     alert("Item Deleted..!")
-     console.log(res.data);
+  // Delete function
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:3001/products/${id}`);
+      toast.warn('Item Deleted..!');
+      setAllp((prevProducts) => prevProducts.filter((item) => item.id !== id)); // Update state to remove the deleted item
+    } catch {
+      console.log('error');
     }
-    catch{
-         console.log("error");
+  };
+
+  // Edit function
+  const nav = useNavigate();
+  const editDta = async (id) => {
+    nav(`/admin/edit/${id}`);
+  };
+
+     // prodeatails
+
+     const proDetails=(id)=>{
+      nav(`/admin/prod/${id}`)
     }
-  }
-
-    // edit fucntion
-const nav=useNavigate();
-const editDta=async(id)=>{
-  nav(`/admin/edit/${id}`)
-
-}
- 
-    
-    
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gray-100 p-4 sm:p-6 md:p-8">
+      <ToastContainer/>
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Dog Products</h1>
-        <h3 className='text-md font-bold mb-4'>Total Products: {dogPro.length}</h3>
-       
+        <h3 className="text-md font-bold mb-4">Total Products: {dogPro.length}</h3>
       </div>
 
       {dogPro.length > 0 ? (
@@ -58,21 +61,28 @@ const editDta=async(id)=>{
               <img
                 src={item.url}
                 alt={item.heading}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover sm:h-56 lg:h-64 cursor-pointer"
+                onClick={()=>proDetails(item.id)}
               />
               <div className="p-4 flex flex-col items-center">
-                <h2 className="text-lg font-semibold text-gray-800">{item.heading}</h2>
+                <h2 className="text-lg font-semibold text-gray-800 cursor-pointer"  onClick={()=>proDetails(item.id)}>{item.heading}</h2>
                 <p className="text-gray-600 mt-1">Rating: ⭐ {item.rating}</p>
                 <p className="text-gray-900 font-bold mt-2">${item.price}</p>
 
                 <div className="flex space-x-2 mt-4">
-                    <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition duration-300" onClick={()=>handleDelete(item.id)}>
-                      Delete
-                    </button>
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300" onClick={()=>editDta(item.id)}>
-                      Edit
-                    </button>
-                  </div>
+                  <button
+                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition duration-300"
+                    onClick={() => handleDelete(item.id)}
+                  >
+                    Delete
+                  </button>
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+                    onClick={() => editDta(item.id)}
+                  >
+                    Edit
+                  </button>
+                </div>
               </div>
             </div>
           ))}
@@ -83,7 +93,7 @@ const editDta=async(id)=>{
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default AdDog
+export default AdDog;

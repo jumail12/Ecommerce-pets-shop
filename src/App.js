@@ -36,6 +36,8 @@ import UserList from "./admin/adminPages/UserList";
 import AdCat from "./admin/catDog/AdCat";
 import AdDog from "./admin/catDog/AdDog";
 import UpdateP from "./admin/adminPages/UpdateP";
+import Prodetails from "./admin/adminComp/Prodetails";
+import Dashboard from "./admin/adminPages/Dashboard";
 
 function App() {
   const location=useLocation();
@@ -102,6 +104,8 @@ function App() {
         <Route path="allpro/dogall" element={<AdDog/>}/>
 
         <Route path="edit/:eid" element={<UpdateP/>}/>
+        <Route path="prod/:pid" element={<Prodetails/>}/>
+        <Route path="dashboard" element={<Dashboard/>}/>
         
         </Route>
         

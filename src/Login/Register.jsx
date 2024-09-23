@@ -108,6 +108,10 @@ const Register = () => {
     setFvalues({ ...Fvalues, [name]: value });
   };
 
+  const handleLnav=()=>{
+    nav("/login")
+  }
+
   return (
     <div className='p-6 m-10'>
       <ToastContainer/>
@@ -216,6 +220,12 @@ const Register = () => {
         Create Account
       </button>
     </form>
+    <div class="mt-3">
+  <h4 class="text-sm ">
+    already have an account, <span class="text-blue-600 font-bold cursor-pointer" onClick={handleLnav}>Log in</span>
+  </h4>
+</div>
+
   </div>
   </div>
   )
