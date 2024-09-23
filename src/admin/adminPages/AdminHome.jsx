@@ -5,8 +5,10 @@ import { Link, Outlet, useNavigate } from 'react-router-dom';
 
 const AdminHome = () => {
   const id = localStorage.getItem("id");
+  const nav = useNavigate();
   const [isAdmin, setIsAdmin] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // For mobile sidebar toggle
+
 
   const fetch = async () => {
     try {
@@ -21,12 +23,15 @@ const AdminHome = () => {
     fetch();
   }, [id]);
 
+
   // Logout handler
-  const nav = useNavigate();
+
   const handleLogout = () => {
     localStorage.clear();
     nav('/login');
   };
+
+  
 
   if (!isAdmin) {
     return (

@@ -425,7 +425,7 @@
       "id": "d0df",
       "firstName": "pp shashi",
       "lastName": "shashi",
-      "email": "mun@gmail.com",
+      "email": " @gmail.com",
       "mob": "8585858578",
       "password": "123456",
       "block": false,
@@ -535,6 +535,132 @@
         "Amount": 443,
         "date": "2024-09-22T11:20:10.045Z",
         "orderId": 909212
+      }
+    },
+    {
+      "id": "58a7",
+      "firstName": "João",
+      "lastName": "Souza Silva",
+      "email": "slll@gmail.com",
+      "mob": "0909090909",
+      "password": "111111",
+      "block": false,
+      "cart": [],
+      "order": {
+        "ShippingAddress": [
+          {
+            "address": "korrikaatil , poothakkad , veramangalm,",
+            "city": "cherpulassery",
+            "state": "kerala",
+            "zip": "679503",
+            "paymentMethod": "UPI"
+          }
+        ],
+        "OrderItems": [
+          {
+            "id": "6",
+            "heading": "Harringtons Complete Natural Adult Dry Dog Food Turkey & Veg 15kg",
+            "discription": "This improved recipe food contains Vitamins, minerals and Omega 3 & 6 in the form of salmon oil to support overall health, maintain a healthy coat and reduce flatulence odour.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_37036.jpg",
+            "catogory": "dog-food",
+            "price": 34,
+            "rating": 4.5,
+            "qty": 5
+          },
+          {
+            "id": "2",
+            "heading": "Pro Plan Vet Diet Hypoallergenic Dry Dog Food 11kg",
+            "discription": "Give your dog the ultimate care with Pro Plan Vet Diet Hypoallergenic Dry Dog Food. Specially formulated for dogs with food sensitivities and allergies,",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7118367.jpg",
+            "catogory": "dog-food",
+            "price": 55,
+            "rating": 4,
+            "qty": 6
+          },
+          {
+            "id": "52",
+            "heading": "Hill's Prescription Diet z/d Food Sensitivities Dry Adult Dog Food 10kg",
+            "discription": "Veterinary-approved dietetic food only to be used based on recommendation of a vet A step ahead for their best life. Hill's Prescription food z/d Food Sensitivities Dry Dog Food is specially formulated by Hill's nutritionists and veterinarians to support your dog's food intolerances.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_32387.jpg",
+            "catogory": "dog-food",
+            "price": "78",
+            "rating": "4",
+            "qty": 5
+          },
+          {
+            "id": "42",
+            "heading": "Royal Canin Labrador Retriever Adult Dry Dog Food 12kg",
+            "discription": "Supports skin health, maintains strong bones, joints, and a healthy coat. Tailored kibble shape aids in weight management.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_12128.jpg",
+            "catogory": "dog-food",
+            "price": "68",
+            "rating": "4.4",
+            "qty": 4
+          },
+          {
+            "id": "4",
+            "heading": "AVA Optimum Health Medium Breed Adult Dry Dog Food Chicken 15kg",
+            "discription": "Digestible chicken protein with omega 3 & 6, vitamins, minerals, and a tailored kibble. Supports digestion, skin, coat, joints, and oral health.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7120070.jpg",
+            "catogory": "dog-food",
+            "price": 47,
+            "rating": 4,
+            "qty": 4
+          },
+          {
+            "id": "55",
+            "heading": "Wainwright's Square Dog Bed with Self Warming Cushion Navy",
+            "discription": "Keep everything extra cosy with this self-warming bed from Wainwright's. Perfect for cooler evenings, the special layer within the cushion reflects your dog's body heat back onto them, helping them to get snuggly and warm.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_P71635.jpg",
+            "catogory": "dog-beds",
+            "price": "50",
+            "rating": "4",
+            "qty": 5
+          },
+          {
+            "id": "18",
+            "heading": "Pets at Home Calming Donut Dog Bed Grey Large",
+            "discription": "A calming, donut-shaped bed with super soft material for ultimate snuggles. Features a removable, machine-washable cover.",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7138665.jpg",
+            "catogory": "dog-beds",
+            "price": 35,
+            "rating": 3.5,
+            "qty": 5
+          },
+          {
+            "id": "12",
+            "heading": "Wainwright's Self Warming Square Dog Bed Grey",
+            "discription": "Self-warming bed with heat-reflective material, dual-sided cushion for year-round comfort, and machine washable for freshness",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7132306.jpg",
+            "catogory": "dog-beds",
+            "price": 30,
+            "rating": 4,
+            "qty": 6
+          },
+          {
+            "id": "20",
+            "heading": "3 Peaks Anti Bacterial Square Dog Bed Green",
+            "discription": "Anti-bacterial and water-resistant for resting after the biggest adventures",
+            "url": "https://cdn.petsathome.com/public/images/products/900_P71628.jpg",
+            "catogory": "dog-beds",
+            "price": 35,
+            "rating": 4.5,
+            "qty": 5
+          },
+          {
+            "id": "15",
+            "heading": "Wainwright's Self Warming Dog Bed Grey Large",
+            "discription": "Self-warming bed with heat-reflective layer for cosy comfort. Features a dual-sided cushion and is machine washable",
+            "url": "https://cdn.petsathome.com/public/images/products/900_7132310.jpg",
+            "catogory": "dog-beds",
+            "price": 41,
+            "rating": 3,
+            "qty": 7
+          }
+        ],
+        "Amount": 2417,
+        "date": "2024-09-23T08:45:36.665Z",
+        "orderId": 418044
       }
     }
   ],
@@ -716,7 +842,7 @@
       "url": "https://cdn.petsathome.com/public/images/products/900_30851.jpg",
       "catogory": "cat-food",
       "price": 27,
-      "rating": 4,
+      "rating": "4.4",
       "qty": 1
     },
     {
@@ -736,7 +862,7 @@
       "url": "https://cdn.petsathome.com/public/images/products/900_7147090.jpg",
       "catogory": "cat-food",
       "price": 25,
-      "rating": 3.5,
+      "rating": "4.5",
       "qty": 1
     },
     {
@@ -816,7 +942,7 @@
       "url": "https://cdn.petsathome.com/public/images/products/900_31103.jpg",
       "catogory": "cat-treat",
       "price": 20,
-      "rating": 4,
+      "rating": "4.5",
       "qty": 1
     },
     {
@@ -988,6 +1114,60 @@
       "price": "50",
       "rating": "4",
       "qty": 1
+    },
+    {
+      "id": "56",
+      "heading": "Seriously Good Wet Adult Cat Food Topper Chicken Bone Broth 4x40g",
+      "discription": "With two ways to try, this Velvety Chicken Broth from Seriously Good, is the ultimate mealtime treat for your cat. Pour the smooth and tasty broth over their regular food at mealtimes or serve on its own in a dish as a treat or reward at anytime, there's no added grain and the delicate",
+      "url": "https://cdn.petsathome.com/public/images/products/900_7146643.jpg",
+      "catogory": "cat-food",
+      "price": "3",
+      "rating": "4",
+      "qty": 1
+    },
+    {
+      "id": "57",
+      "heading": "James Wellbeloved Wet Senior Dog Food in Gravy Mixed Pack 48x90g Pouches",
+      "discription": "Hypoallergenic recipe made with natural ingredients and no added colours. Helps support healthy digestion with fibres from natural sources. Vitamin E helps to support your dog's immune system and Omega 6 promotes healthy skin.",
+      "url": "https://cdn.petsathome.com/public/images/products/900_7151018.jpg",
+      "catogory": "dog-food",
+      "price": "25",
+      "rating": "4",
+      "qty": 1
+    }
+  ],
+  "petsData": [
+    {
+      "id": 1,
+      "type": "Dog",
+      "name": "Buddy",
+      "breed": "Golden Retriever",
+      "age": "2 years",
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/06/27/02/21/puppy-823190_960_720.jpg"
+    },
+    {
+      "id": 2,
+      "type": "Cat",
+      "name": "Whiskers",
+      "breed": "Siamese",
+      "age": "1 year",
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/08/08/52/cat-2126225_960_720.jpg"
+    },
+    {
+      "id": 3,
+      "type": "Dog",
+      "name": "Max",
+      "breed": "Beagle",
+      "age": "3 years",
+      "imageUrl": "https://cdn.pixabay.com/photo/2022/05/20/14/02/beagle-7209563_960_720.jpg"
+    },
+    {
+      "id": 4,
+      "type": "Cat",
+      "name": "Luna",
+      "breed": "Persian",
+      "age": "4 years",
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/10/12/58/cat-1897221_1280.jpg"
     }
   ]
 }

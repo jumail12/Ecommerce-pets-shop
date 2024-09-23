@@ -38,6 +38,7 @@ import AdDog from "./admin/catDog/AdDog";
 import UpdateP from "./admin/adminPages/UpdateP";
 import Prodetails from "./admin/adminComp/Prodetails";
 import Dashboard from "./admin/adminPages/Dashboard";
+import PetAdoption from "./comp/PetAdoption";
 
 function App() {
   const location=useLocation();
@@ -72,6 +73,8 @@ function App() {
           <Route path="food" element={<Catfood />} />
           <Route path="treat" element={<Cattreat />} />
         </Route>
+
+        <Route path="/ad" element={<PetAdoption/>}/>
           
           {/* product deatails */}
         <Route path="/item/:id" element={<Pdetails />} />
@@ -97,7 +100,7 @@ function App() {
         {/* <Route index element={<UserList/>}/> */}
         <Route path="alluser" element={<UserList/>}/>
 
-        <Route index element={<Allproducts/>}/>
+        <Route index element={<Dashboard/>}/>
         <Route path="allpro" element={<Allproducts/>}/>
         <Route path="addpro" element={<Addproducts/>}/>
         <Route path="allpro/catall" element={<AdCat/>}/>
