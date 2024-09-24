@@ -15,9 +15,6 @@ const Prodetails = () => {
         fetchPro();
     },[]);
 
-    console.log(pdetails);
-    
-
      // back button
      const nav=useNavigate();
      const Back=()=>{
@@ -26,11 +23,7 @@ const Prodetails = () => {
 
   return (
     <div className="p-8 mb-6">
-  
-     
-
        <button title='Back' className='bg-purple-600 mt-2 text-white px-2 py-1 rounded-md shadow hover:bg-purple-700 transition-colors duration-300' onClick={Back}>←</button>
-
           <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6" >
     
     {/* Product Image */}

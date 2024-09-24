@@ -37,7 +37,7 @@ const Addproducts = () => {
         rating: formV.rating,
         qty: 1
       });
-      // alert("Item added successfully..!");
+      
       toast.success("Item added successfully..!")
     } catch {
       console.log("Error in posting new item");

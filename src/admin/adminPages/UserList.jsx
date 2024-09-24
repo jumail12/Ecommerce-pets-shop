@@ -20,13 +20,16 @@ const UserList = () => {
     setFilter(filteredUsers);
   }, [user]);
 
+
   // Navigate to user details page
   const nav = useNavigate();
   const userD = (userId) => {
     nav(`/admin/userd/${userId}`);
   };
 
-  // Block / Unblock users
+
+
+  // Block 
   const handleBlockUser = async (id) => {
     try {
       await axios.patch(`http://localhost:3001/users/${id}`, { block: true });
@@ -37,6 +40,8 @@ const UserList = () => {
       console.log("Error");
     }
   };
+
+  // Unblock users
 
   const handleUnblockUser = async (id) => {
     try {
@@ -54,6 +59,7 @@ const UserList = () => {
       <div>
         <h1 className="text-2xl md:text-3xl font-bold mb-6">User List</h1>
       </div>
+      
       <div className="space-y-4">
         {filterU.map((user) => (
           <div

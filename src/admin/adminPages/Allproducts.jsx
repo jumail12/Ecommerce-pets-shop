@@ -34,7 +34,6 @@ const Allproducts = () => {
   };
 
   // prodeatails
-
   const proDetails=(id)=>{
     nav(`/admin/prod/${id}`)
   }
@@ -67,7 +66,7 @@ const Allproducts = () => {
       {/* Main Content */}
       <div className="flex-1 p-9">
         <h1 className="text-2xl font-bold mb-4">All Products</h1>
-        <h3 className="text-md font-bold mb-4">Total Products: {allp.length}</h3>
+        <h3 className="text-md font-bold mb-4">Total Products: {allp.length-1}</h3>
 
         <div>
           {allp.length > 0 ? (

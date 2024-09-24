@@ -9,32 +9,7 @@
       "password": "111111",
       "block": false,
       "cart": [],
-      "order": {
-        "ShippingAddress": [
-          {
-            "address": "korrikaatil , poothakkad , veramangalm,",
-            "city": "cherpulassery",
-            "state": "kerala",
-            "zip": "679503",
-            "paymentMethod": "CARD"
-          }
-        ],
-        "OrderItems": [
-          {
-            "id": "7",
-            "heading": "Pro Plan Sensitive Skin Medium Adult Dry Dog Food Salman",
-            "discription": "High-quality salmon-rich food, ideal for medium dogs aged 1-7 years, supports healthy teeth, gums, and sensitive skin. High protein for strong muscles.",
-            "url": "https://cdn.petsathome.com/public/images/products/900_P4652.jpg",
-            "catogory": "dog-food",
-            "price": 16,
-            "rating": 3,
-            "qty": 1
-          }
-        ],
-        "Amount": 16,
-        "date": "2024-09-21T10:05:17.640Z",
-        "orderId": 444972
-      },
+      "order": {},
       "admin": true
     },
     {
@@ -688,7 +663,7 @@
     {
       "id": "3",
       "heading": "Royal Canin Veterinary Hypoallergenic Adult Dry Dog Food",
-      "-": "Royal Canin Veterinary Hypoallergenic Adult Dry Dog Food is expertly formulated to support dogs with food sensitivities. This vet-recommended diet features hydrolyzed proteins",
+      "discription": "Royal Canin Veterinary Hypoallergenic Adult Dry Dog Food is expertly formulated to support dogs with food sensitivities. This vet-recommended diet features hydrolyzed proteins",
       "url": "https://cdn.petsathome.com/public/images/products/900_7103687.jpg",
       "catogory": "dog-food",
       "price": 20,
@@ -1134,11 +1109,31 @@
       "price": "25",
       "rating": "4",
       "qty": 1
+    },
+    {
+      "id": "58",
+      "heading": "Pro Plan Vet Diet Hypoallergenic Wet Adult Dog Food HA 12x400g",
+      "discription": "Veterinary-approved dietetic food only to be used based on recommendation of a vet",
+      "url": "https://cdn.petsathome.com/public/images/products/900_7149294.jpg",
+      "catogory": "dog-food",
+      "price": "35",
+      "rating": "4.2",
+      "qty": 1
+    },
+    {
+      "id": "59",
+      "heading": "Felix Goody Bag Original Mix Cat Treats 330g",
+      "discription": "Packed with minerals, vitamins, protein, and omega 6, these treats are perfect for rewarding your cat anytime.",
+      "url": "https://cdn.petsathome.com/public/images/products/900_7141938.jpg",
+      "catogory": "cat-treat",
+      "price": "5",
+      "rating": "4.2",
+      "qty": 1
     }
   ],
   "petsData": [
     {
-      "id": 1,
+      "id": "1",
       "type": "Dog",
       "name": "Buddy",
       "breed": "Golden Retriever",
@@ -1146,7 +1141,7 @@
       "imageUrl": "https://cdn.pixabay.com/photo/2015/06/27/02/21/puppy-823190_960_720.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "type": "Cat",
       "name": "Whiskers",
       "breed": "Siamese",
@@ -1154,7 +1149,7 @@
       "imageUrl": "https://cdn.pixabay.com/photo/2017/03/08/08/52/cat-2126225_960_720.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "type": "Dog",
       "name": "Max",
       "breed": "Beagle",
@@ -1162,7 +1157,7 @@
       "imageUrl": "https://cdn.pixabay.com/photo/2022/05/20/14/02/beagle-7209563_960_720.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "type": "Cat",
       "name": "Luna",
       "breed": "Persian",

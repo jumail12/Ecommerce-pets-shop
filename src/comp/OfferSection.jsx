@@ -2,6 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const OfferSection = () => {
+    const nav=useNavigate()
+    const handleC=()=>{
+  nav("/cat")
+    }
+
+    const handleD=()=>{
+        nav("/dog")
+          }
   
 
 
@@ -11,7 +19,7 @@ const OfferSection = () => {
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-12">
                 {/* Dog Food Offer */}
-                <div className="dog-offer w-full md:w-1/2">
+                <div className="dog-offer w-full md:w-1/2 cursor-pointer" onClick={handleD}>
                     <img 
                         src="https://cdn.pixabay.com/photo/2020/03/31/19/20/dog-4988985_1280.jpg" 
                         alt="Dog Food Offer" 
@@ -24,7 +32,7 @@ const OfferSection = () => {
                 </div>
 
                 {/* Cat Food Offer */}
-                <div className="cat-offer w-full md:w-1/2">
+                <div className="cat-offer w-full md:w-1/2 cursor-pointer" onClick={handleC}>
                     <img 
                         src="https://cdn.pixabay.com/photo/2016/02/10/16/37/cat-1192026_960_720.jpg" 
                         alt="Cat Food Offer" 

@@ -1,4 +1,5 @@
 import "./index.css";
+
 import Home from "./pages/Home";
 import Navbar from "./comp/Navbar";
 import Footer from "./comp/Footer";
@@ -55,7 +56,7 @@ function App() {
         <Route path="/login" element={<SignUp />} />
         <Route path="/register" element={<Register />} />
           
-          {/* TopProducts */}
+       {/* TopProducts */}
         <Route path="/store" element={<TopProducts />}></Route>
 
         {/* Dogpage */}
@@ -75,6 +76,7 @@ function App() {
         </Route>
 
         <Route path="/ad" element={<PetAdoption/>}/>
+      
           
           {/* product deatails */}
         <Route path="/item/:id" element={<Pdetails />} />
@@ -92,23 +94,19 @@ function App() {
         <Route path="/summary" element={<OrderSummary />} />
 
         {/* admin */}
-
-        
         <Route path="/admin" element={<AdminHome></AdminHome>}>
-
-        <Route path="userd/:u" element={<UserDetails />} /> 
-        {/* <Route index element={<UserList/>}/> */}
+        
         <Route path="alluser" element={<UserList/>}/>
+         <Route path="userd/:u" element={<UserDetails />} /> 
+         <Route index element={<Dashboard/>}/>
+         <Route path="allpro" element={<Allproducts/>}/>
+         <Route path="addpro" element={<Addproducts/>}/>
+         <Route path="allpro/catall" element={<AdCat/>}/>
+         <Route path="allpro/dogall" element={<AdDog/>}/>
 
-        <Route index element={<Dashboard/>}/>
-        <Route path="allpro" element={<Allproducts/>}/>
-        <Route path="addpro" element={<Addproducts/>}/>
-        <Route path="allpro/catall" element={<AdCat/>}/>
-        <Route path="allpro/dogall" element={<AdDog/>}/>
-
-        <Route path="edit/:eid" element={<UpdateP/>}/>
-        <Route path="prod/:pid" element={<Prodetails/>}/>
-        <Route path="dashboard" element={<Dashboard/>}/>
+         <Route path="edit/:eid" element={<UpdateP/>}/>
+         <Route path="prod/:pid" element={<Prodetails/>}/>
+         <Route path="dashboard" element={<Dashboard/>}/>
         
         </Route>
         

@@ -35,10 +35,9 @@ const UpdateP = () => {
   // Handle input changes for each field
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setUform((prev) => ({
-      ...prev,
-      [name]: value
-    }));
+    setUform((prev) => (
+      {...prev,[name]: value }
+    ));
   };
 
   // Handle form submission
@@ -46,8 +45,6 @@ const UpdateP = () => {
     e.preventDefault();
     try {
       const res = await axios.put(`http://localhost:3001/products/${eid}`, uform);
-      console.log(res.data);
-      // alert('Product updated!');
       toast.success('Product updated!');
     } catch (error) {
       console.log('Error updating product', error);

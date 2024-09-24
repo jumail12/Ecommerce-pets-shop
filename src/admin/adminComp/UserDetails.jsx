@@ -20,7 +20,7 @@ const UserDetails = () => {
   }, []);
 
   const { order = {} } = udata;
-  const { ShippingAddress = [], OrderItems = [] } = order;
+  const { ShippingAddress = [], OrderItems = [],Amount } = order;
 
   return (
     <div className="p-4 md:p-8 min-h-screen bg-gradient-to-r from-blue-500 to-red-500 text-white">
@@ -37,7 +37,7 @@ const UserDetails = () => {
 
         {/* Shipping Address */}
         <div className="mb-4">
-          <h1 className="text-lg md:text-xl font-bold text-red-600">Shipping Address:</h1>
+          <h1 className="text-lg md:text-xl font-bold text-red-600"> Address:</h1>
           {ShippingAddress.length > 0 ? (
             ShippingAddress.map((address, index) => (
               <div key={index} className="mb-2 p-4 rounded-lg bg-blue-100">
@@ -52,6 +52,9 @@ const UserDetails = () => {
         </div>
 
         {/* Order Items */}
+        <div>
+            <h1 className=''><strong>Number of items: {OrderItems.length}</strong></h1>
+        </div>
         <div className="mb-4">
           <h1 className="text-lg md:text-xl font-bold text-red-600">Order Items:</h1>
           {OrderItems.length > 0 ? (
@@ -61,22 +64,27 @@ const UserDetails = () => {
                 <img
                   src={item.url}
                   alt={item.heading}
-                  className="w-full md:w-32 h-32 object-cover mb-4 md:mb-0 mr-0 md:mr-4 rounded-lg border-2 border-blue-600"
+                  className="w-full md:w-32 h-32 object-cover mb-4 md:mb-0 mr-0 md:mr-4 rounded-lg border-2 "
                 />
 
                 {/* Item Details */}
                 <div className="w-full">
                   <h3 className="text-md md:text-lg font-bold text-blue-600">{item.heading}</h3>
                   <p className="font-semibold mt-2 text-red-600">
-                    <strong>Price:</strong> ${item.price}
+                    Price: ${item.price}
                   </p>
                   <p><strong>Quantity:</strong> {item.qty}</p>
+                  <h2 className="font-bold mt-2 text-red-600">Pay: ${item.qty*item.price}</h2>
                 </div>
+               
               </div>
             ))
           ) : (
             <p className="text-red-600">No order items found.</p>
           )}
+        </div>
+        <div>
+            <h1 className='text-red-600 text-lg font-bold'><strong>Total: ${Amount}</strong></h1>
         </div>
       </div>
     </div>

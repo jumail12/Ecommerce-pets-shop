@@ -4,10 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 
 const AdminHome = () => {
-  const id = localStorage.getItem("id");
-  const nav = useNavigate();
+
   const [isAdmin, setIsAdmin] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // For mobile sidebar toggle
+
+  const id = localStorage.getItem("id");
+  const nav = useNavigate();
 
 
   const fetch = async () => {
