@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   const U=users.filter((u)=>!u.admin);
   const totalU=U.length
-  const totalP=products.length;
+  const totalP=products.length-1;
 
   // profit
 
@@ -42,7 +42,6 @@ const Dashboard = () => {
     return acc+=val;
    },0)
   
-
   return (
     <div className="bg-gray-100 min-h-screen p-8">
       <h1 className="text-3xl font-bold mb-8 text-center">Dashboard</h1>

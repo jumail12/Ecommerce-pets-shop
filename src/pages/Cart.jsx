@@ -45,10 +45,6 @@ useEffect(()=>{
 
 
   // qty 
-
-  
-
-
   // +
 
   const increasQty=async(id)=>{
@@ -89,7 +85,8 @@ const navi=useNavigate();
 
 const handlePayment =()=>{
   if(CartItems.length===0){
-    alert("Your Cart is Empty..!")
+    // alert("Your Cart is Empty..!")
+    toast.warn("Your Cart is Empty..!")
   }else{
     navi("/payment");
   }

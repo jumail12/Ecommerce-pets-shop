@@ -35,7 +35,7 @@ const UserDetails = () => {
           <h2 className="text-md font-bold">Phone: {udata.mob}</h2>
         </div>
 
-        {/* Shipping Address */}
+        {/*  Address */}
         <div className="mb-4">
           <h1 className="text-lg md:text-xl font-bold text-red-600"> Address:</h1>
           {ShippingAddress.length > 0 ? (

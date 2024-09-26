@@ -11,7 +11,6 @@ const AdminHome = () => {
   const id = localStorage.getItem("id");
   const nav = useNavigate();
 
-
   const fetch = async () => {
     try {
       const res = await axios.get(`http://localhost:3001/users/${id}`);
@@ -25,15 +24,12 @@ const AdminHome = () => {
     fetch();
   }, [id]);
 
-
   // Logout handler
 
   const handleLogout = () => {
     localStorage.clear();
     nav('/login');
   };
-
-  
 
   if (!isAdmin) {
     return (
@@ -105,7 +101,7 @@ const AdminHome = () => {
       <div className="flex-grow p-6 bg-gray-50 lg:ml-64">
         <div className="bg-white p-6 rounded-md shadow-md">
           <Outlet />
-        </div>
+        </div>-
       </div>
     </div>
   );

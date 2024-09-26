@@ -36,9 +36,7 @@ const AdDog = () => {
   const editDta = async (id) => {
     nav(`/admin/edit/${id}`);
   };
-
      // prodeatails
-
      const proDetails=(id)=>{
       nav(`/admin/prod/${id}`)
     }

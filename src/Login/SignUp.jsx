@@ -57,13 +57,8 @@ const SignUp = () => {
         window.location.reload();
       }
       else{
-        // alert("Your account is blocked!")
         toast.warning("Your account is blocked!");
       }
-      
-      
-     
-      
     }
   };
 

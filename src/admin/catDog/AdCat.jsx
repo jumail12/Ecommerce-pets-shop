@@ -38,7 +38,6 @@ const AdCat = () => {
   };
 
     // prodeatails
-
     const proDetails=(id)=>{
       nav(`/admin/prod/${id}`)
     }

@@ -77,7 +77,6 @@ function App() {
 
         <Route path="/ad" element={<PetAdoption/>}/>
       
-          
           {/* product deatails */}
         <Route path="/item/:id" element={<Pdetails />} />
 

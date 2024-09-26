@@ -20,14 +20,11 @@ const UserList = () => {
     setFilter(filteredUsers);
   }, [user]);
 
-
   // Navigate to user details page
   const nav = useNavigate();
   const userD = (userId) => {
     nav(`/admin/userd/${userId}`);
   };
-
-
 
   // Block 
   const handleBlockUser = async (id) => {
@@ -42,7 +39,6 @@ const UserList = () => {
   };
 
   // Unblock users
-
   const handleUnblockUser = async (id) => {
     try {
       await axios.patch(`http://localhost:3001/users/${id}`, { block: false });
